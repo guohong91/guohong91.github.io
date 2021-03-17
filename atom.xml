@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://guohong91.github.io</id>
     <title>Good idea</title>
-    <updated>2021-03-17T15:15:47.766Z</updated>
+    <updated>2021-03-17T15:17:59.924Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://guohong91.github.io"/>
     <link rel="self" href="https://guohong91.github.io/atom.xml"/>
@@ -17,9 +17,8 @@
         </link>
         <updated>2021-03-17T15:07:25.000Z</updated>
         <content type="html"><![CDATA[<p>👏  欢迎来到我的小站 ！<br>
-✍️  这个网站会记录我的生活、心情、知识、笔记、创意... ...<br>
-<a href="https://github.com/guohong91">Github</a><br>
-今天利用下午到晚上的时间搭建网站，遇到各种问题，终于搞定。。。<br>
+✍️  这个网站会记录我的生活、心情、知识、笔记、创意... ...</p>
+<p>今天利用下午到晚上的时间搭建网站，遇到各种问题，终于搞定。。。<br>
 so exciting!</p>
 ]]></content>
     </entry>
