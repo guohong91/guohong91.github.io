@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://guohong91.github.io</id>
-    <title>Gridea</title>
-    <updated>2021-03-17T14:40:40.639Z</updated>
+    <title>Good idea</title>
+    <updated>2021-03-17T14:47:46.334Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://guohong91.github.io"/>
     <link rel="self" href="https://guohong91.github.io/atom.xml"/>
-    <subtitle>温故而知新</subtitle>
+    <subtitle>记录好想法</subtitle>
     <logo>https://guohong91.github.io/images/avatar.png</logo>
     <icon>https://guohong91.github.io/favicon.ico</icon>
-    <rights>All rights reserved 2021, Gridea</rights>
+    <rights>All rights reserved 2021, Good idea</rights>
     <entry>
         <title type="html"><![CDATA[Hello Gridea]]></title>
         <id>https://guohong91.github.io/post/hello-gridea/</id>
