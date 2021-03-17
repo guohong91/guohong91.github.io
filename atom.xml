@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://guohong91.github.io</id>
     <title>Good idea</title>
-    <updated>2021-03-17T15:06:26.472Z</updated>
+    <updated>2021-03-17T15:08:44.599Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://guohong91.github.io"/>
     <link rel="self" href="https://guohong91.github.io/atom.xml"/>
@@ -12,10 +12,10 @@
     <rights>All rights reserved 2021, Good idea</rights>
     <entry>
         <title type="html"><![CDATA[Hello Guys!]]></title>
-        <id>https://guohong91.github.io/post/hello-gridea/</id>
-        <link href="https://guohong91.github.io/post/hello-gridea/">
+        <id>https://guohong91.github.io/post/hello-guys/</id>
+        <link href="https://guohong91.github.io/post/hello-guys/">
         </link>
-        <updated>2018-12-11T16:00:00.000Z</updated>
+        <updated>2021-03-17T15:07:25.000Z</updated>
         <content type="html"><![CDATA[<p>👏  欢迎来到我的小站 ！<br>
 ✍️  这个网站会记录我的生活、心情、知识、笔记、创意... ...<br>
 <a href="https://github.com/guohong91">Github</a><br>
