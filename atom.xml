@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://guohong91.github.io</id>
     <title>Good idea</title>
-    <updated>2021-03-19T01:38:36.034Z</updated>
+    <updated>2021-03-19T02:10:52.182Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://guohong91.github.io"/>
     <link rel="self" href="https://guohong91.github.io/atom.xml"/>
@@ -10,6 +10,41 @@
     <logo>https://guohong91.github.io/images/avatar.png</logo>
     <icon>https://guohong91.github.io/favicon.ico</icon>
     <rights>All rights reserved 2021, Good idea</rights>
+    <entry>
+        <title type="html"><![CDATA[Linux常见基本命令]]></title>
+        <id>https://guohong91.github.io/post/linux-chang-jian-ji-ben-ming-ling/</id>
+        <link href="https://guohong91.github.io/post/linux-chang-jian-ji-ben-ming-ling/">
+        </link>
+        <updated>2021-03-19T01:42:47.000Z</updated>
+        <content type="html"><![CDATA[<ol>
+<li>查看文件信息：ls ls是英文单词list的简写，其功能为列出目录的内容</li>
+<li>清屏：clear</li>
+<li>切换工作目录： cd</li>
+<li>显示当前路径：pwd</li>
+<li>创建目录：mkdir</li>
+<li>删除文件：rm</li>
+<li>拷贝：cp</li>
+<li>mv：移动、重命名</li>
+<li>创建文件: touch</li>
+<li>输出重定向命令：&gt; , ls &gt; test.txt ( test.txt 如果不存在，则创建，存在则覆盖其内容 )</li>
+<li>分屏显示：more</li>
+<li>管道：|</li>
+<li>建立链接文件：ln ,Linux链接文件类似于Windows下的快捷方式 ln -s 源文件 链接文件</li>
+<li>查看或者合并文件内容：cat</li>
+<li>文本搜索：grep</li>
+<li>查找文件：find</li>
+<li>文件压缩解压：gzip  压缩用法：tar cvzf 压缩包包名 文件1 文件2 …，tar zxvf 压缩包包名</li>
+<li>文件压缩解压：bzip2</li>
+<li>查看命令位置：which</li>
+<li>修改文件权限：chmod chmod u/g/o/a +/-/= rwx 文件</li>
+<li>切换到管理员账号：sudo -s</li>
+<li>设置用户密码：passwd 用户文件夹</li>
+<li>退出登录账户： exit</li>
+<li>查看登录用户：who</li>
+<li>关机重启：reboot、shutdown、init</li>
+</ol>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[记录抓住的美好瞬间]]></title>
         <id>https://guohong91.github.io/post/ji-lu-zhua-zhu-de-mei-hao-de-shun-jian/</id>
