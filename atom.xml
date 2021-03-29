@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://guohong91.github.io</id>
     <title>Good idea</title>
-    <updated>2021-03-19T02:10:52.182Z</updated>
+    <updated>2021-03-29T06:26:36.278Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://guohong91.github.io"/>
     <link rel="self" href="https://guohong91.github.io/atom.xml"/>
@@ -10,6 +10,22 @@
     <logo>https://guohong91.github.io/images/avatar.png</logo>
     <icon>https://guohong91.github.io/favicon.ico</icon>
     <rights>All rights reserved 2021, Good idea</rights>
+    <entry>
+        <title type="html"><![CDATA[Gridea 部署 GitHub Pages]]></title>
+        <id>https://guohong91.github.io/post/gridea-da-jian-github-pages/</id>
+        <link href="https://guohong91.github.io/post/gridea-da-jian-github-pages/">
+        </link>
+        <updated>2021-03-29T06:03:58.000Z</updated>
+        <content type="html"><![CDATA[<p>Gridea，一个静态博客写作客户端。Gridea 提供了将博客部署到 GitHub Pages、Coding Pages 和通过 SFTP 的方式上传到自己的服务器的功能。</p>
+<p>搭建GitHub Pages网站https://docs.github.com/en/github/working-with-github-pages/creating-a-github-pages-site</p>
+<p>以 GitHub 为例，部署流程详细访问：https://gridea.dev/gridea-start/</p>
+<p>开启文章评论<br>
+Gridea 支持 Gitalk 和 Disqus 两种评论系统，这里我使用 Gitalk 评论系统。Gitalk 是一个基于 GitHub Issue 和 Preact 开发的评论插件。首先你需要有一个 GitHub OAuth Applicatio ，点击https://github.com/settings/applications/new 创建。<br>
+创建完成后可将 Client ID 和 Client Secret 复制保存到本地。</p>
+<p>各详细过程可访问：https://zhuanlan.zhihu.com/p/71681116</p>
+<p>如果换电脑可以直接加载保存的站点源文件即可，或者同步站点源文件。</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Linux常见基本命令]]></title>
         <id>https://guohong91.github.io/post/linux-chang-jian-ji-ben-ming-ling/</id>
