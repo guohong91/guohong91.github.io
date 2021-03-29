@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://guohong91.github.io</id>
-    <title>Good idea</title>
-    <updated>2021-03-29T06:42:18.791Z</updated>
+    <title>Guohong&apos; Website</title>
+    <updated>2021-03-29T06:46:33.457Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://guohong91.github.io"/>
     <link rel="self" href="https://guohong91.github.io/atom.xml"/>
     <subtitle>记录好想法</subtitle>
     <logo>https://guohong91.github.io/images/avatar.png</logo>
     <icon>https://guohong91.github.io/favicon.ico</icon>
-    <rights>All rights reserved 2021, Good idea</rights>
+    <rights>All rights reserved 2021, Guohong&apos; Website</rights>
     <entry>
         <title type="html"><![CDATA[Violin plot and LSD test R code]]></title>
         <id>https://guohong91.github.io/post/violin-plot-and-lsd-test-r-code/</id>
