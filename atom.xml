@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://guohong91.github.io</id>
     <title>Guohong&apos; Website</title>
-    <updated>2021-04-15T13:56:58.080Z</updated>
+    <updated>2021-04-16T02:43:19.790Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://guohong91.github.io"/>
     <link rel="self" href="https://guohong91.github.io/atom.xml"/>
@@ -10,6 +10,28 @@
     <logo>https://guohong91.github.io/images/avatar.png</logo>
     <icon>https://guohong91.github.io/favicon.ico</icon>
     <rights>All rights reserved 2021, Guohong&apos; Website</rights>
+    <entry>
+        <title type="html"><![CDATA[map+pie+point]]></title>
+        <id>https://guohong91.github.io/post/mappiepoint/</id>
+        <link href="https://guohong91.github.io/post/mappiepoint/">
+        </link>
+        <updated>2021-04-16T02:42:17.000Z</updated>
+        <content type="html"><![CDATA[<p>library(ggplot2)<br>
+library(scatterpie)<br>
+d&lt;-read.table(&quot;clipboard&quot;,header=T)</p>
+<p>#a white map<br>
+world &lt;- map_data('world')<br>
+p &lt;- ggplot(world, aes(long, lat)) +<br>
+geom_map(map=world, aes(map_id=region), fill=&quot;gray75&quot;, color=&quot;grey75&quot;) +<br>
+coord_quickmap()</p>
+<p>#white map with pie chart<br>
+p + geom_scatterpie(aes(x=long, y=lat, group=region, r=radius),<br>
+data=d, cols=c(&quot;IS&quot;,&quot;IG&quot;), color=NA, alpha=.8) +<br>
+geom_scatterpie_legend(d$radius, x=-160, y=-55,n=3)</p>
+<p>#white map with point<br>
+p + geom_point(aes(x=long, y=lat, color=region,size=radius),data=d)</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[List of capital cities with latitude and longitude]]></title>
         <id>https://guohong91.github.io/post/list-of-capital-cities-with-latitude-and-longitude/</id>
