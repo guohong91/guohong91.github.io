@@ -3,7 +3,7 @@
     <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>map+pie+point | Guohong&#39; Website</title>
-<link rel="shortcut icon" href="https://guohong91.github.io/favicon.ico?v=1618540996442">
+<link rel="shortcut icon" href="https://guohong91.github.io/favicon.ico?v=1618541275600">
 <link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
 <link rel="stylesheet" href="https://guohong91.github.io/styles/main.css">
 <link rel="alternate" type="application/atom+xml" title="map+pie+point | Guohong&#39; Website - Atom Feed" href="https://guohong91.github.io/atom.xml">
@@ -25,7 +25,7 @@ world &lt;- map_data(..." />
       <div class="main-content">
         <div class="site-header">
   <a href="https://guohong91.github.io">
-  <img class="avatar" src="https://guohong91.github.io/images/avatar.png?v=1618540996442" alt="">
+  <img class="avatar" src="https://guohong91.github.io/images/avatar.png?v=1618541275600" alt="">
   </a>
   <h1 class="site-title">
     Guohong&#39; Website
@@ -103,9 +103,11 @@ coord_quickmap()</p>
 <p>#white map with pie chart<br>
 p + geom_scatterpie(aes(x=long, y=lat, group=region, r=radius),<br>
 data=d, cols=c(&quot;IS&quot;,&quot;IG&quot;), color=NA, alpha=.8) +<br>
-geom_scatterpie_legend(d$radius, x=-160, y=-55,n=3)</p>
+geom_scatterpie_legend(d$radius, x=-160, y=-55,n=3)<br>
+<img src="https://guohong91.github.io/post-images/1618541253229.png" alt="" loading="lazy"></p>
 <p>#white map with point<br>
-p + geom_point(aes(x=long, y=lat, color=region,size=radius),data=d)</p>
+p + geom_point(aes(x=long, y=lat, color=region,size=radius),data=d)<br>
+<img src="https://guohong91.github.io/post-images/1618541272408.png" alt="" loading="lazy"></p>
 
               </div>
               <div class="toc-container">
