@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://guohong91.github.io</id>
     <title>Guohong&apos; Website</title>
-    <updated>2021-04-16T02:49:47.244Z</updated>
+    <updated>2021-04-16T07:26:58.690Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://guohong91.github.io"/>
     <link rel="self" href="https://guohong91.github.io/atom.xml"/>
@@ -10,6 +10,26 @@
     <logo>https://guohong91.github.io/images/avatar.png</logo>
     <icon>https://guohong91.github.io/favicon.ico</icon>
     <rights>All rights reserved 2021, Guohong&apos; Website</rights>
+    <entry>
+        <title type="html"><![CDATA[map+point plot]]></title>
+        <id>https://guohong91.github.io/post/mappoint-plot/</id>
+        <link href="https://guohong91.github.io/post/mappoint-plot/">
+        </link>
+        <updated>2021-04-16T07:25:17.000Z</updated>
+        <content type="html"><![CDATA[<p>library(ggplot2)<br>
+library(scatterpie)<br>
+d&lt;-read.table(&quot;clipboard&quot;,header=T)</p>
+<p>#a white map<br>
+world &lt;- map_data('world')<br>
+p &lt;- ggplot(world, aes(long, lat)) +<br>
+geom_map(map=world, aes(map_id=region), fill=&quot;gray75&quot;, color=&quot;grey75&quot;) +<br>
+coord_quickmap()</p>
+<p>#white map with point+Change the point size manually<br>
+p +geom_point(data=d,aes(x=long, y=lat,colour=factor(region),size=radius))+<br>
+scale_color_manual(d$region,values = c(&quot;#FF0000&quot;,&quot;#CCFF00&quot;,&quot;#00FF66&quot;,&quot;#0066FF&quot;,&quot;#CC00FF&quot;))<br>
+<img src="https://guohong91.github.io/post-images/1618557871213.png" alt="" loading="lazy"></p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[map+pie+point]]></title>
         <id>https://guohong91.github.io/post/mappiepoint/</id>

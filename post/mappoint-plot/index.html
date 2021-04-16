@@ -2,24 +2,20 @@
   <head>
     <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>关于 | Guohong&#39; Website</title>
+<title>map+point plot | Guohong&#39; Website</title>
 <link rel="shortcut icon" href="https://guohong91.github.io/favicon.ico?v=1618558014704">
 <link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
 <link rel="stylesheet" href="https://guohong91.github.io/styles/main.css">
-<link rel="alternate" type="application/atom+xml" title="关于 | Guohong&#39; Website - Atom Feed" href="https://guohong91.github.io/atom.xml">
+<link rel="alternate" type="application/atom+xml" title="map+point plot | Guohong&#39; Website - Atom Feed" href="https://guohong91.github.io/atom.xml">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
 
 
 
-    <meta name="description" content="
-欢迎来到我的网页，很高兴遇见你！🤝
-
-🏠 关于本站
-此网站基于github 和Gridea 搭建，用于分享生活和学习心得，记录美好！
-👨‍💻 博主是谁
-郭宏 山西吕梁人 北京博士在读
-⛹ 兴趣爱好
-篮球 羽毛球 游戏 拍照 旅游 ..." />
+    <meta name="description" content="library(ggplot2)
+library(scatterpie)
+d&lt;-read.table(&quot;clipboard&quot;,header=T)
+#a white map
+world &lt;- map_data(..." />
     <meta name="keywords" content="" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
     <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
@@ -82,11 +78,11 @@
         <div class="post-detail">
           <article class="post">
             <h2 class="post-title">
-              关于
+              map+point plot
             </h2>
             <div class="post-info">
               <span>
-                2019-01-25
+                2021-04-16
               </span>
               <span>
                 1 min read
@@ -96,36 +92,36 @@
             
             <div class="post-content-wrapper">
               <div class="post-content">
-                <blockquote>
-<p>欢迎来到我的网页，很高兴遇见你！🤝</p>
-</blockquote>
-<h2 id="关于本站">🏠 关于本站</h2>
-<p>此网站基于github 和Gridea 搭建，用于分享生活和学习心得，记录美好！</p>
-<h2 id="博主是谁">👨‍💻 博主是谁</h2>
-<p>郭宏 山西吕梁人 北京博士在读</p>
-<h2 id="兴趣爱好">⛹ 兴趣爱好</h2>
-<p>篮球 羽毛球 游戏 拍照 旅游 烹饪</p>
-<h2 id="联系我呀">📬 联系我呀</h2>
-<p>QQ邮箱：1476931069@qq.com</p>
+                <p>library(ggplot2)<br>
+library(scatterpie)<br>
+d&lt;-read.table(&quot;clipboard&quot;,header=T)</p>
+<p>#a white map<br>
+world &lt;- map_data('world')<br>
+p &lt;- ggplot(world, aes(long, lat)) +<br>
+geom_map(map=world, aes(map_id=region), fill=&quot;gray75&quot;, color=&quot;grey75&quot;) +<br>
+coord_quickmap()</p>
+<p>#white map with point+Change the point size manually<br>
+p +geom_point(data=d,aes(x=long, y=lat,colour=factor(region),size=radius))+<br>
+scale_color_manual(d$region,values = c(&quot;#FF0000&quot;,&quot;#CCFF00&quot;,&quot;#00FF66&quot;,&quot;#0066FF&quot;,&quot;#CC00FF&quot;))<br>
+<img src="https://guohong91.github.io/post-images/1618557871213.png" alt="" loading="lazy"></p>
 
               </div>
               <div class="toc-container">
-                <ul class="markdownIt-TOC">
-<li>
-<ul>
-<li><a href="#%E5%85%B3%E4%BA%8E%E6%9C%AC%E7%AB%99">🏠 关于本站</a></li>
-<li><a href="#%E5%8D%9A%E4%B8%BB%E6%98%AF%E8%B0%81">👨‍💻 博主是谁</a></li>
-<li><a href="#%E5%85%B4%E8%B6%A3%E7%88%B1%E5%A5%BD">⛹ 兴趣爱好</a></li>
-<li><a href="#%E8%81%94%E7%B3%BB%E6%88%91%E5%91%80">📬 联系我呀</a></li>
-</ul>
-</li>
-</ul>
-
+                
               </div>
             </div>
           </article>
         </div>
 
+        
+          <div class="next-post">
+            <div class="next">下一篇</div>
+            <a href="https://guohong91.github.io/post/mappiepoint/">
+              <h3 class="post-title">
+                map+pie+point
+              </h3>
+            </a>
+          </div>
         
 
         
