@@ -2,11 +2,11 @@
   <head>
     <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Violin plot and LSD test R code | Guohong&#39; Website</title>
+<title>volin+LSD+scale_fill_manual | Guohong&#39; Website</title>
 <link rel="shortcut icon" href="https://guohong91.github.io/favicon.ico?v=1618560610432">
 <link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
 <link rel="stylesheet" href="https://guohong91.github.io/styles/main.css">
-<link rel="alternate" type="application/atom+xml" title="Violin plot and LSD test R code | Guohong&#39; Website - Atom Feed" href="https://guohong91.github.io/atom.xml">
+<link rel="alternate" type="application/atom+xml" title="volin+LSD+scale_fill_manual | Guohong&#39; Website - Atom Feed" href="https://guohong91.github.io/atom.xml">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
 
 
@@ -15,7 +15,10 @@
 library(agricolae)
 library(ggplot2)
 library(ggpubr)
-data&lt;-read.delim(&quot;cli..." />
+#查看库路径
+#.libPaths()
+#卸载已加载的包
+..." />
     <meta name="keywords" content="" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
     <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
@@ -78,11 +81,11 @@ data&lt;-read.delim(&quot;cli..." />
         <div class="post-detail">
           <article class="post">
             <h2 class="post-title">
-              Violin plot and LSD test R code
+              volin+LSD+scale_fill_manual
             </h2>
             <div class="post-info">
               <span>
-                2021-03-29
+                2021-04-16
               </span>
               <span>
                 2 min read
@@ -96,10 +99,13 @@ data&lt;-read.delim(&quot;cli..." />
 library(agricolae)<br>
 library(ggplot2)<br>
 library(ggpubr)<br>
+#查看库路径<br>
+#.libPaths()<br>
+#卸载已加载的包<br>
+#remove.packages(c(&quot;&quot;),lib=file.path('E:/R/R-4.0.4/library'))<br>
 data&lt;-read.delim(&quot;clipboard&quot;,header=TRUE)<br>
-#LSD test<br>
-model&lt;-aov(HGW~SNP, data=data)# 单因素方差分析<br>
-LSD&lt;-LSD.test(model,&quot;SNP&quot;, p.adj=&quot;bonferroni&quot;) #LSD法检验<br>
+model&lt;-aov(HGW~subgroup, data=data)# 单因素方差分析<br>
+LSD&lt;-LSD.test(model,&quot;subgroup&quot;, p.adj=&quot;bonferroni&quot;) #LSD法检验<br>
 rowname&lt;-row.names(LSD<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>g</mi><mi>r</mi><mi>o</mi><mi>u</mi><mi>p</mi><mi>s</mi><mo>)</mo><mi>m</mi><mi>a</mi><mi>r</mi><mi>k</mi><mo>&lt;</mo><mo>−</mo><mi>L</mi><mi>S</mi><mi>D</mi></mrow><annotation encoding="application/x-tex">groups)
 mark&lt;-LSD</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault" style="margin-right:0.03588em;">g</span><span class="mord mathdefault" style="margin-right:0.02778em;">r</span><span class="mord mathdefault">o</span><span class="mord mathdefault">u</span><span class="mord mathdefault">p</span><span class="mord mathdefault">s</span><span class="mclose">)</span><span class="mord mathdefault">m</span><span class="mord mathdefault">a</span><span class="mord mathdefault" style="margin-right:0.02778em;">r</span><span class="mord mathdefault" style="margin-right:0.03148em;">k</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">&lt;</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.76666em;vertical-align:-0.08333em;"></span><span class="mord">−</span><span class="mord mathdefault">L</span><span class="mord mathdefault" style="margin-right:0.05764em;">S</span><span class="mord mathdefault" style="margin-right:0.02778em;">D</span></span></span></span>groups<br>
 rownamemar&lt;-row.names(mark)<br>
@@ -112,18 +118,18 @@ Max&lt;-LSD<span class="katex"><span class="katex-mathml"><math><semantics><mrow
 r&lt;-LSD</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault">m</span><span class="mord mathdefault">e</span><span class="mord mathdefault">a</span><span class="mord mathdefault">n</span><span class="mord mathdefault">s</span><span class="mopen">[</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord">7</span><span class="mclose">]</span><span class="mord mathdefault" style="margin-right:0.02778em;">r</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">&lt;</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.76666em;vertical-align:-0.08333em;"></span><span class="mord">−</span><span class="mord mathdefault">L</span><span class="mord mathdefault" style="margin-right:0.05764em;">S</span><span class="mord mathdefault" style="margin-right:0.02778em;">D</span></span></span></span>means[,3]<br>
 marker&lt;-sort<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>m</mi><mi>a</mi><mi>r</mi><mi>k</mi><mi mathvariant="normal">.</mi><mi>g</mi><mi>r</mi><mi>o</mi><mi>u</mi><mi>p</mi><mi>s</mi><mi>M</mi><mi>a</mi><mi>r</mi><mi>k</mi><mi>d</mi><mi>a</mi><mi>t</mi><mi>a</mi><mo>&lt;</mo><mo>−</mo><mi>d</mi><mi>a</mi><mi>t</mi><mi>a</mi><mi mathvariant="normal">.</mi><mi>f</mi><mi>r</mi><mi>a</mi><mi>m</mi><mi>e</mi><mo>(</mo><mi>r</mi><mi>o</mi><mi>w</mi><mi>n</mi><mi>a</mi><mi>m</mi><mi>e</mi><mo separator="true">,</mo><mi>m</mi><mi>e</mi><mi>a</mi><mi>n</mi><mo separator="true">,</mo><mi>s</mi><mi>d</mi><mo separator="true">,</mo><mi>M</mi><mi>a</mi><mi>x</mi><mo separator="true">,</mo><mi>r</mi><mo separator="true">,</mo><mi>m</mi><mi>a</mi><mi>r</mi><mi>k</mi><mi>e</mi><mi>r</mi><mo>)</mo><mi>t</mi><mi>o</mi><mi>p</mi><mo>&lt;</mo><mo>−</mo><mi>m</mi><mi>a</mi><mi>x</mi><mo>(</mo><mi>M</mi><mi>a</mi><mi>r</mi><mi>k</mi><mi>d</mi><mi>a</mi><mi>t</mi><mi>a</mi></mrow><annotation encoding="application/x-tex">mark.groups
 Markdata&lt;-data.frame(rowname, mean, sd, Max, r, marker)
-top&lt;-max(Markdata</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8888799999999999em;vertical-align:-0.19444em;"></span><span class="mord mathdefault">m</span><span class="mord mathdefault">a</span><span class="mord mathdefault" style="margin-right:0.02778em;">r</span><span class="mord mathdefault" style="margin-right:0.03148em;">k</span><span class="mord">.</span><span class="mord mathdefault" style="margin-right:0.03588em;">g</span><span class="mord mathdefault" style="margin-right:0.02778em;">r</span><span class="mord mathdefault">o</span><span class="mord mathdefault">u</span><span class="mord mathdefault">p</span><span class="mord mathdefault">s</span><span class="mord mathdefault" style="margin-right:0.10903em;">M</span><span class="mord mathdefault">a</span><span class="mord mathdefault" style="margin-right:0.02778em;">r</span><span class="mord mathdefault" style="margin-right:0.03148em;">k</span><span class="mord mathdefault">d</span><span class="mord mathdefault">a</span><span class="mord mathdefault">t</span><span class="mord mathdefault">a</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">&lt;</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">−</span><span class="mord mathdefault">d</span><span class="mord mathdefault">a</span><span class="mord mathdefault">t</span><span class="mord mathdefault">a</span><span class="mord">.</span><span class="mord mathdefault" style="margin-right:0.10764em;">f</span><span class="mord mathdefault" style="margin-right:0.02778em;">r</span><span class="mord mathdefault">a</span><span class="mord mathdefault">m</span><span class="mord mathdefault">e</span><span class="mopen">(</span><span class="mord mathdefault" style="margin-right:0.02778em;">r</span><span class="mord mathdefault">o</span><span class="mord mathdefault" style="margin-right:0.02691em;">w</span><span class="mord mathdefault">n</span><span class="mord mathdefault">a</span><span class="mord mathdefault">m</span><span class="mord mathdefault">e</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathdefault">m</span><span class="mord mathdefault">e</span><span class="mord mathdefault">a</span><span class="mord mathdefault">n</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathdefault">s</span><span class="mord mathdefault">d</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathdefault" style="margin-right:0.10903em;">M</span><span class="mord mathdefault">a</span><span class="mord mathdefault">x</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathdefault" style="margin-right:0.02778em;">r</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathdefault">m</span><span class="mord mathdefault">a</span><span class="mord mathdefault" style="margin-right:0.02778em;">r</span><span class="mord mathdefault" style="margin-right:0.03148em;">k</span><span class="mord mathdefault">e</span><span class="mord mathdefault" style="margin-right:0.02778em;">r</span><span class="mclose">)</span><span class="mord mathdefault">t</span><span class="mord mathdefault">o</span><span class="mord mathdefault">p</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">&lt;</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">−</span><span class="mord mathdefault">m</span><span class="mord mathdefault">a</span><span class="mord mathdefault">x</span><span class="mopen">(</span><span class="mord mathdefault" style="margin-right:0.10903em;">M</span><span class="mord mathdefault">a</span><span class="mord mathdefault" style="margin-right:0.02778em;">r</span><span class="mord mathdefault" style="margin-right:0.03148em;">k</span><span class="mord mathdefault">d</span><span class="mord mathdefault">a</span><span class="mord mathdefault">t</span><span class="mord mathdefault">a</span></span></span></span>Max)<br>
-#plot<br>
-ggplot(data = data, aes(x = SNP, y = HGW, fill = SNP)) +<br>
+top&lt;-max(Markdata</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8888799999999999em;vertical-align:-0.19444em;"></span><span class="mord mathdefault">m</span><span class="mord mathdefault">a</span><span class="mord mathdefault" style="margin-right:0.02778em;">r</span><span class="mord mathdefault" style="margin-right:0.03148em;">k</span><span class="mord">.</span><span class="mord mathdefault" style="margin-right:0.03588em;">g</span><span class="mord mathdefault" style="margin-right:0.02778em;">r</span><span class="mord mathdefault">o</span><span class="mord mathdefault">u</span><span class="mord mathdefault">p</span><span class="mord mathdefault">s</span><span class="mord mathdefault" style="margin-right:0.10903em;">M</span><span class="mord mathdefault">a</span><span class="mord mathdefault" style="margin-right:0.02778em;">r</span><span class="mord mathdefault" style="margin-right:0.03148em;">k</span><span class="mord mathdefault">d</span><span class="mord mathdefault">a</span><span class="mord mathdefault">t</span><span class="mord mathdefault">a</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">&lt;</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">−</span><span class="mord mathdefault">d</span><span class="mord mathdefault">a</span><span class="mord mathdefault">t</span><span class="mord mathdefault">a</span><span class="mord">.</span><span class="mord mathdefault" style="margin-right:0.10764em;">f</span><span class="mord mathdefault" style="margin-right:0.02778em;">r</span><span class="mord mathdefault">a</span><span class="mord mathdefault">m</span><span class="mord mathdefault">e</span><span class="mopen">(</span><span class="mord mathdefault" style="margin-right:0.02778em;">r</span><span class="mord mathdefault">o</span><span class="mord mathdefault" style="margin-right:0.02691em;">w</span><span class="mord mathdefault">n</span><span class="mord mathdefault">a</span><span class="mord mathdefault">m</span><span class="mord mathdefault">e</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathdefault">m</span><span class="mord mathdefault">e</span><span class="mord mathdefault">a</span><span class="mord mathdefault">n</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathdefault">s</span><span class="mord mathdefault">d</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathdefault" style="margin-right:0.10903em;">M</span><span class="mord mathdefault">a</span><span class="mord mathdefault">x</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathdefault" style="margin-right:0.02778em;">r</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathdefault">m</span><span class="mord mathdefault">a</span><span class="mord mathdefault" style="margin-right:0.02778em;">r</span><span class="mord mathdefault" style="margin-right:0.03148em;">k</span><span class="mord mathdefault">e</span><span class="mord mathdefault" style="margin-right:0.02778em;">r</span><span class="mclose">)</span><span class="mord mathdefault">t</span><span class="mord mathdefault">o</span><span class="mord mathdefault">p</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">&lt;</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">−</span><span class="mord mathdefault">m</span><span class="mord mathdefault">a</span><span class="mord mathdefault">x</span><span class="mopen">(</span><span class="mord mathdefault" style="margin-right:0.10903em;">M</span><span class="mord mathdefault">a</span><span class="mord mathdefault" style="margin-right:0.02778em;">r</span><span class="mord mathdefault" style="margin-right:0.03148em;">k</span><span class="mord mathdefault">d</span><span class="mord mathdefault">a</span><span class="mord mathdefault">t</span><span class="mord mathdefault">a</span></span></span></span>Max)</p>
+<p>ggplot(data = data, aes(x = subgroup, y = HGW, fill = subgroup)) +<br>
 geom_violin(trim=FALSE)+<br>
 geom_boxplot(width=0.05, fill=&quot;white&quot;)+<br>
-labs(title=&quot;&quot;,x=&quot;SNP&quot;, y = &quot;HGW (g)&quot;)+<br>
+labs(title=&quot;&quot;,x=&quot;&quot;, y = &quot;HGW (g)&quot;)+<br>
 scale_fill_brewer(palette=&quot;Dark2&quot;) +<br>
 theme_minimal()+<br>
-geom_text(data = Markdata, aes(x= factor(rowname), y= top+3, label = marker), inherit.aes = FALSE)+<br>
-geom_text(data = Markdata, aes(x= factor(rowname), y= top+4, label = r), inherit.aes = FALSE)<br>
-#save<br>
-ggsave(&quot;.pdf&quot;, width = 5, height = 5)</p>
+theme(legend.position=&quot;none&quot;)+<br>
+geom_text(data = Markdata, aes(x= factor(rowname), y= top+1.3, label = marker), inherit.aes = FALSE)+<br>
+geom_text(data = Markdata, aes(x= factor(rowname), y= top+2, label = r), inherit.aes = FALSE)+<br>
+scale_fill_manual(values = c(&quot;#FF0000&quot;,&quot;#CCFF00&quot;,&quot;#00FF66&quot;,&quot;#0066FF&quot;,&quot;#CC00FF&quot;))</p>
+<p>#ggsave(&quot;.pdf&quot;, width = 5, height = 5)</p>
 
               </div>
               <div class="toc-container">
@@ -136,9 +142,9 @@ ggsave(&quot;.pdf&quot;, width = 5, height = 5)</p>
         
           <div class="next-post">
             <div class="next">下一篇</div>
-            <a href="https://guohong91.github.io/post/gridea-da-jian-github-pages/">
+            <a href="https://guohong91.github.io/post/mappoint-plot/">
               <h3 class="post-title">
-                Gridea 部署 GitHub Pages
+                map+point plot
               </h3>
             </a>
           </div>
