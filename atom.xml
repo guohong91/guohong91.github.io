@@ -2,13 +2,34 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://guohong91.github.io</id>
     <title>夸父诞宏志，乃与日竞走</title>
-    <updated>2021-04-18T05:26:25.142Z</updated>
+    <updated>2021-04-18T05:31:33.896Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://guohong91.github.io"/>
     <link rel="self" href="https://guohong91.github.io/atom.xml"/>
     <logo>https://guohong91.github.io/images/avatar.png</logo>
     <icon>https://guohong91.github.io/favicon.ico</icon>
     <rights>All rights reserved 2021, 夸父诞宏志，乃与日竞走</rights>
+    <entry>
+        <title type="html"><![CDATA[关雎]]></title>
+        <id>https://guohong91.github.io/post/guan-ju/</id>
+        <link href="https://guohong91.github.io/post/guan-ju/">
+        </link>
+        <updated>2021-04-18T05:30:16.000Z</updated>
+        <content type="html"><![CDATA[<p>关关雎鸠，在河之洲。<br>
+窈窕淑女，君子好逑。<br>
+参差荇菜，左右流之。<br>
+窈窕淑女，寤寐求之。<br>
+求之不得，寤寐思服。<br>
+悠哉悠哉，辗转反侧。<br>
+参差荇菜，左右采之。<br>
+窈窕淑女，琴瑟友之。<br>
+参差荇菜，左右芼之。<br>
+窈窕淑女，钟鼓乐之。<br>
+——先秦·佚名《关雎》</p>
+<p>诗文学习网站<br>
+https://so.gushiwen.cn/shiwenv_4c5705b99143.aspx</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[volin+LSD+scale_fill_manual]]></title>
         <id>https://guohong91.github.io/post/volinlsdscale_fill_manual/</id>
@@ -666,20 +687,6 @@ Gridea 支持 Gitalk 和 Disqus 两种评论系统，这里我使用 Gitalk 评�
 <li>查看登录用户：who</li>
 <li>关机重启：reboot、shutdown、init</li>
 </ol>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[记录抓住的美好瞬间]]></title>
-        <id>https://guohong91.github.io/post/ji-lu-zhua-zhu-de-mei-hao-de-shun-jian/</id>
-        <link href="https://guohong91.github.io/post/ji-lu-zhua-zhu-de-mei-hao-de-shun-jian/">
-        </link>
-        <updated>2021-03-17T17:53:55.000Z</updated>
-        <content type="html"><![CDATA[<p><img src="https://guohong91.github.io/post-images/1616003694913.jpg" alt="" loading="lazy"><br>
-<img src="https://guohong91.github.io/post-images/1616003706849.jfif" alt="" loading="lazy"><br>
-<img src="https://guohong91.github.io/post-images/1616003714990.jpg" alt="" loading="lazy"><br>
-<img src="https://guohong91.github.io/post-images/1616003721419.jpg" alt="" loading="lazy"><br>
-<img src="https://guohong91.github.io/post-images/1616003728272.jpg" alt="" loading="lazy"><br>
-<img src="https://guohong91.github.io/post-images/1616003739608.jfif" alt="" loading="lazy"></p>
 ]]></content>
     </entry>
 </feed>
