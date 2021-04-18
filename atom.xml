@@ -1,15 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://guohong91.github.io</id>
-    <title>Guohong&apos; Website</title>
-    <updated>2021-04-16T08:10:16.451Z</updated>
+    <title>夸父诞宏志，乃与日竞走</title>
+    <updated>2021-04-18T05:24:25.759Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://guohong91.github.io"/>
     <link rel="self" href="https://guohong91.github.io/atom.xml"/>
-    <subtitle>记录好想法</subtitle>
     <logo>https://guohong91.github.io/images/avatar.png</logo>
     <icon>https://guohong91.github.io/favicon.ico</icon>
-    <rights>All rights reserved 2021, Guohong&apos; Website</rights>
+    <rights>All rights reserved 2021, 夸父诞宏志，乃与日竞走</rights>
     <entry>
         <title type="html"><![CDATA[volin+LSD+scale_fill_manual]]></title>
         <id>https://guohong91.github.io/post/volinlsdscale_fill_manual/</id>
