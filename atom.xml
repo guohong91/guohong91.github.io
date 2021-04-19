@@ -2,13 +2,22 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://guohong91.github.io</id>
     <title>夸父诞宏志，乃与日竞走</title>
-    <updated>2021-04-18T05:31:33.896Z</updated>
+    <updated>2021-04-19T08:02:10.884Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://guohong91.github.io"/>
     <link rel="self" href="https://guohong91.github.io/atom.xml"/>
     <logo>https://guohong91.github.io/images/avatar.png</logo>
     <icon>https://guohong91.github.io/favicon.ico</icon>
     <rights>All rights reserved 2021, 夸父诞宏志，乃与日竞走</rights>
+    <entry>
+        <title type="html"><![CDATA[搭建免费个人博客，使用Gridea和Coding Page]]></title>
+        <id>https://guohong91.github.io/post/da-jian-mian-fei-ge-ren-bo-ke-shi-yong-gridea-he-coding-page/</id>
+        <link href="https://guohong91.github.io/post/da-jian-mian-fei-ge-ren-bo-ke-shi-yong-gridea-he-coding-page/">
+        </link>
+        <updated>2021-04-19T08:01:35.000Z</updated>
+        <content type="html"><![CDATA[<p>https://www.jianshu.com/p/a2fcd9bff0e8</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[关雎]]></title>
         <id>https://guohong91.github.io/post/guan-ju/</id>
@@ -652,41 +661,6 @@ Gridea 支持 Gitalk 和 Disqus 两种评论系统，这里我使用 Gitalk 评�
 创建完成后可将 Client ID 和 Client Secret 复制保存到本地。</p>
 <p>各详细过程可访问：https://zhuanlan.zhihu.com/p/71681116</p>
 <p>如果换电脑可以直接加载保存的站点源文件即可，或者同步站点源文件。</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Linux常见基本命令]]></title>
-        <id>https://guohong91.github.io/post/linux-chang-jian-ji-ben-ming-ling/</id>
-        <link href="https://guohong91.github.io/post/linux-chang-jian-ji-ben-ming-ling/">
-        </link>
-        <updated>2021-03-19T01:42:47.000Z</updated>
-        <content type="html"><![CDATA[<ol>
-<li>查看文件信息：ls ls是英文单词list的简写，其功能为列出目录的内容</li>
-<li>清屏：clear</li>
-<li>切换工作目录： cd</li>
-<li>显示当前路径：pwd</li>
-<li>创建目录：mkdir</li>
-<li>删除文件：rm</li>
-<li>拷贝：cp</li>
-<li>mv：移动、重命名</li>
-<li>创建文件: touch</li>
-<li>输出重定向命令：&gt; , ls &gt; test.txt ( test.txt 如果不存在，则创建，存在则覆盖其内容 )</li>
-<li>分屏显示：more</li>
-<li>管道：|</li>
-<li>建立链接文件：ln ,Linux链接文件类似于Windows下的快捷方式 ln -s 源文件 链接文件</li>
-<li>查看或者合并文件内容：cat</li>
-<li>文本搜索：grep</li>
-<li>查找文件：find</li>
-<li>文件压缩解压：gzip  压缩用法：tar cvzf 压缩包包名 文件1 文件2 …，tar zxvf 压缩包包名</li>
-<li>文件压缩解压：bzip2</li>
-<li>查看命令位置：which</li>
-<li>修改文件权限：chmod chmod u/g/o/a +/-/= rwx 文件</li>
-<li>切换到管理员账号：sudo -s</li>
-<li>设置用户密码：passwd 用户文件夹</li>
-<li>退出登录账户： exit</li>
-<li>查看登录用户：who</li>
-<li>关机重启：reboot、shutdown、init</li>
-</ol>
 ]]></content>
     </entry>
 </feed>
