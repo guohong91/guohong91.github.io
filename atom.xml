@@ -2,13 +2,27 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://guohong91.github.io</id>
     <title>夸父诞宏志，乃与日竞走</title>
-    <updated>2021-04-20T01:06:57.652Z</updated>
+    <updated>2021-04-20T13:08:09.740Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://guohong91.github.io"/>
     <link rel="self" href="https://guohong91.github.io/atom.xml"/>
     <logo>https://guohong91.github.io/images/avatar.png</logo>
     <icon>https://guohong91.github.io/favicon.ico</icon>
     <rights>All rights reserved 2021, 夸父诞宏志，乃与日竞走</rights>
+    <entry>
+        <title type="html"><![CDATA[A Simplified Classification of Cultivated Sorghum]]></title>
+        <id>https://guohong91.github.io/post/a-simplified-classification-of-cultivated-sorghum/</id>
+        <link href="https://guohong91.github.io/post/a-simplified-classification-of-cultivated-sorghum/">
+        </link>
+        <updated>2021-04-20T13:03:56.000Z</updated>
+        <content type="html"><![CDATA[<p><img src="https://guohong91.github.io/post-images/1618924004477.png" alt="" loading="lazy"><br>
+<img src="https://guohong91.github.io/post-images/1618924013558.png" alt="" loading="lazy"><br>
+<img src="https://guohong91.github.io/post-images/1618924020890.png" alt="" loading="lazy"><br>
+<img src="https://guohong91.github.io/post-images/1618924026664.png" alt="" loading="lazy"><br>
+<img src="https://guohong91.github.io/post-images/1618924032305.png" alt="" loading="lazy"><br>
+https://acsess.onlinelibrary.wiley.com/doi/pdf/10.2135/cropsci1972.0011183X001200020005x</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[搭建免费个人博客，使用Gridea和Coding Page]]></title>
         <id>https://guohong91.github.io/post/da-jian-mian-fei-ge-ren-bo-ke-shi-yong-gridea-he-coding-page/</id>
@@ -645,22 +659,6 @@ geom_text(data = Markdata, aes(x= factor(rowname), y= top+3, label = marker), in
 geom_text(data = Markdata, aes(x= factor(rowname), y= top+4, label = r), inherit.aes = FALSE)<br>
 #save<br>
 ggsave(&quot;.pdf&quot;, width = 5, height = 5)</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Gridea 部署 GitHub Pages]]></title>
-        <id>https://guohong91.github.io/post/gridea-da-jian-github-pages/</id>
-        <link href="https://guohong91.github.io/post/gridea-da-jian-github-pages/">
-        </link>
-        <updated>2021-03-29T06:03:58.000Z</updated>
-        <content type="html"><![CDATA[<p>Gridea，一个静态博客写作客户端。Gridea 提供了将博客部署到 GitHub Pages、Coding Pages 和通过 SFTP 的方式上传到自己的服务器的功能。</p>
-<p>搭建GitHub Pages网站https://docs.github.com/en/github/working-with-github-pages/creating-a-github-pages-site</p>
-<p>以 GitHub 为例，部署流程详细访问：https://gridea.dev/gridea-start/</p>
-<p>开启文章评论<br>
-Gridea 支持 Gitalk 和 Disqus 两种评论系统，这里我使用 Gitalk 评论系统。Gitalk 是一个基于 GitHub Issue 和 Preact 开发的评论插件。首先你需要有一个 GitHub OAuth Applicatio ，点击https://github.com/settings/applications/new 创建。<br>
-创建完成后可将 Client ID 和 Client Secret 复制保存到本地。</p>
-<p>各详细过程可访问：https://zhuanlan.zhihu.com/p/71681116</p>
-<p>如果换电脑可以直接加载保存的站点源文件即可，或者同步站点源文件。</p>
 ]]></content>
     </entry>
 </feed>
