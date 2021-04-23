@@ -2,13 +2,26 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://guohong91.github.io</id>
     <title>夸父诞宏志，乃与日竞走</title>
-    <updated>2021-04-23T09:04:15.396Z</updated>
+    <updated>2021-04-23T09:06:59.496Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://guohong91.github.io"/>
     <link rel="self" href="https://guohong91.github.io/atom.xml"/>
     <logo>https://guohong91.github.io/images/avatar.png</logo>
     <icon>https://guohong91.github.io/favicon.ico</icon>
     <rights>All rights reserved 2021, 夸父诞宏志，乃与日竞走</rights>
+    <entry>
+        <title type="html"><![CDATA[高粱种子发育转录组]]></title>
+        <id>https://guohong91.github.io/post/gao-liang-chong-zi-fa-yu-zhuan-lu-zu/</id>
+        <link href="https://guohong91.github.io/post/gao-liang-chong-zi-fa-yu-zhuan-lu-zu/">
+        </link>
+        <updated>2021-04-23T09:04:17.000Z</updated>
+        <content type="html"><![CDATA[<ol>
+<li>高粱种子颜色Metabolite Profiling of Sorghum Seeds of Different Colors from Different Sweet Sorghum Cultivars Using a Widely Targeted Metabolomics Approach</li>
+<li>丹宁合成路径The persimmon (Diospyros oleifera Cheng) genome provides new insights into the inheritance of astringency and ancestral evolution</li>
+<li></li>
+</ol>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[植物转录因子结合位点预测的工具及其docker镜像]]></title>
         <id>https://guohong91.github.io/post/zhi-wu-zhuan-lu-yin-zi-jie-he-wei-dian-yu-ce-de-gong-ju-ji-qi-docker-jing-xiang/</id>
@@ -623,17 +636,6 @@ Viet Nam	Hanoi	21.05N	105.55E<br>
 Yugoslavia	Belgrade	44.50N	20.37E<br>
 Zambia	Lusaka	15.28S	28.16E<br>
 Zimbabwe	Harare	17.43S	31.02E</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[一站式安装 X 终端全家桶 ｜ XShell Xstp Xmanager ｜ 官方渠道 ｜ 破解]]></title>
-        <id>https://guohong91.github.io/post/yi-zhan-shi-an-zhuang-x-zhong-duan-quan-jia-tong-or-xshell-xstp-xmanager-or-guan-fang-qu-dao-or-po-jie/</id>
-        <link href="https://guohong91.github.io/post/yi-zhan-shi-an-zhuang-x-zhong-duan-quan-jia-tong-or-xshell-xstp-xmanager-or-guan-fang-qu-dao-or-po-jie/">
-        </link>
-        <updated>2021-04-01T01:44:13.000Z</updated>
-        <content type="html"><![CDATA[<p>由 NetSarang 公司推出的一系列终端模拟软件：XShell、Xftp、XManager 提供了强大且安全的远程终端模拟功能，是 Windows 平台上比较强大的终端模拟软件之一，几乎是开发者必备软件之一。众所周知该软件分为 评估版本、家庭 / 学校免费版、激活码注册收费版，而破解往往需要基于激活码注册收费版。</p>
-<p>激活码收费版的链接没有在官网明确标示，网上流传的大都也是评估版或是家庭学校免费版，本文就介绍一种通过官方渠道获取 Xmanager PowerSuit 的方法，之后介绍利用激活软件激活软件的方法。<br>
-https://blog.frytea.com/archives/427/</p>
 ]]></content>
     </entry>
 </feed>
