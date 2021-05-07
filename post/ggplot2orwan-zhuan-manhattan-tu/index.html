@@ -3,7 +3,7 @@
         <head>
         <meta name="viewport" content="width=device-width,minimum-scale=1,maximum-scale=1,initial-scale=1,user-scalable=no" />
         <meta charset="utf-8">
-        <title>生物信息学分析方法I: 全基因组关联分析概述 | 夸父诞宏志，乃与日竞走</title>
+        <title>ggplot2|玩转Manhattan图 | 夸父诞宏志，乃与日竞走</title>
         <link rel="stylesheet" href="https://guohong91.github.io/styles/main.css">
         <link rel="stylesheet" href="https://at.alicdn.com/t/font_1306644_jwtuc2zzbrd.css">
         <link href="https://cdn.bootcss.com/animate.css/3.7.2/animate.min.css" rel="stylesheet">
@@ -56,36 +56,30 @@
                 <div class="mdui-row">
                         <div class="mdui-col-md-8 mdui-col-offset-md-2 ">
                                 <article class="mdui-p-a-2 post animated fadeIn" style="animation-delay: 0.8s;animation-duration: 2s">
-                                    <div class="post-title  mdui-m-b-1">生物信息学分析方法I: 全基因组关联分析概述</div>
-                                    <div class="mdui-typo-body-2 mdui-m-b-2" datetime="2021-04-28 10:53:58">2021-04-28 / 1 min read</div>
-                                    <div class="mdui-m-b-2 mdui-typo post-neirong"><p><img src="https://guohong91.github.io/post-images/1619578449909.png" alt="" loading="lazy"><br>
-<img src="https://guohong91.github.io/post-images/1619578458499.png" alt="" loading="lazy"><br>
-<img src="https://guohong91.github.io/post-images/1619578463715.png" alt="" loading="lazy"><br>
-<img src="https://guohong91.github.io/post-images/1619578468883.png" alt="" loading="lazy"><br>
-<img src="https://guohong91.github.io/post-images/1619578475365.png" alt="" loading="lazy"><br>
-<img src="https://guohong91.github.io/post-images/1619578482755.png" alt="" loading="lazy"><br>
-<img src="https://guohong91.github.io/post-images/1619578489481.png" alt="" loading="lazy"><br>
-<img src="https://guohong91.github.io/post-images/1619578496915.png" alt="" loading="lazy"><br>
-<img src="https://guohong91.github.io/post-images/1619578506752.png" alt="" loading="lazy"><br>
-<img src="https://guohong91.github.io/post-images/1619578516968.png" alt="" loading="lazy"><br>
-<img src="https://guohong91.github.io/post-images/1619578524895.png" alt="" loading="lazy"><br>
-<img src="https://guohong91.github.io/post-images/1619578532070.png" alt="" loading="lazy"><br>
-<img src="https://guohong91.github.io/post-images/1619578540239.png" alt="" loading="lazy"><br>
-<img src="https://guohong91.github.io/post-images/1619578546476.png" alt="" loading="lazy"><br>
-<img src="https://guohong91.github.io/post-images/1619578552736.png" alt="" loading="lazy"><br>
-<img src="https://guohong91.github.io/post-images/1619578560602.png" alt="" loading="lazy"><br>
-<img src="https://guohong91.github.io/post-images/1619578566433.png" alt="" loading="lazy"><br>
-<img src="https://guohong91.github.io/post-images/1619578572057.png" alt="" loading="lazy"><br>
-https://www.chinbullbotany.com/CN/10.11983/CBB20091</p>
+                                    <div class="post-title  mdui-m-b-1">ggplot2|玩转Manhattan图</div>
+                                    <div class="mdui-typo-body-2 mdui-m-b-2" datetime="2021-05-07 16:13:58">2021-05-07 / 1 min read</div>
+                                    <div class="mdui-m-b-2 mdui-typo post-neirong"><p>library(ggplot2)<br>
+data&lt;-read.delim(&quot;clipboard&quot;,header=TRUE)<br>
+ggplot(data, aes(x=POS, y=-log10(P))) +<br>
+#设置点的大小，透明度<br>
+geom_point( aes(color=as.factor(CHROM)), alpha=0.8, size=1.3)+<br>
+#添加阈值线<br>
+geom_hline(yintercept =-log10(0.05/nrow(data)),linetype=&quot;longdash&quot;) +<br>
+#设置主题<br>
+theme_bw() +<br>
+theme(<br>
+legend.position=&quot;none&quot;<br>
+)<br>
+https://blog.csdn.net/ddxygq/article/details/103555955</p>
 </div>
                                     <div class="mdui-divider mdui-m-b-2"></div>
                                     <div class="mdui-row-xs-2 post-fenye">
                                        
-                                        <div class="mdui-col"> <div class="mdui-text-left"><a href="https://guohong91.github.io/post/ggplot2orwan-zhuan-manhattan-tu/">ggplot2|玩转Manhattan图</a></div></div>
+                                        <div class="mdui-col"> </div>
                                         
 
                                         
-                                        <div class="mdui-col"><div class="mdui-text-right "><a href="https://guohong91.github.io/post/gao-liang-chong-zi-fa-yu-zhuan-lu-zu/">高粱种子发育转录组</a></div> </div>
+                                        <div class="mdui-col"><div class="mdui-text-right "><a href="https://guohong91.github.io/post/sheng-wu-xin-xi-xue-fen-xi-fang-fa-i-quan-ji-yin-zu-guan-lian-fen-xi-gai-shu/">生物信息学分析方法I: 全基因组关联分析概述</a></div> </div>
                                        
                                       </div>
                                    
