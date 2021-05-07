@@ -2,13 +2,25 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://guohong91.github.io</id>
     <title>夸父诞宏志，乃与日竞走</title>
-    <updated>2021-05-07T08:39:56.052Z</updated>
+    <updated>2021-05-07T09:10:14.537Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://guohong91.github.io"/>
     <link rel="self" href="https://guohong91.github.io/atom.xml"/>
     <logo>https://guohong91.github.io/images/avatar.png</logo>
     <icon>https://guohong91.github.io/favicon.ico</icon>
     <rights>All rights reserved 2021, 夸父诞宏志，乃与日竞走</rights>
+    <entry>
+        <title type="html"><![CDATA[ Median joining network construct]]></title>
+        <id>https://guohong91.github.io/post/median-joining-network-construct/</id>
+        <link href="https://guohong91.github.io/post/median-joining-network-construct/">
+        </link>
+        <updated>2021-05-07T09:08:58.000Z</updated>
+        <content type="html"><![CDATA[<p>https://peerj.com/articles/4896/<br>
+https://peerj.com/articles/3163/<br>
+softwarehttps://www.fluxus-engineering.com/<br>
+<img src="https://guohong91.github.io/post-images/1620378604620.jpg" alt="" loading="lazy"></p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[ggplot2|玩转Manhattan图]]></title>
         <id>https://guohong91.github.io/post/ggplot2orwan-zhuan-manhattan-tu/</id>
@@ -191,30 +203,6 @@ coord_quickmap()</p>
 p +geom_point(data=d,aes(x=long, y=lat,colour=factor(region),size=radius))+<br>
 scale_color_manual(d$region,values = c(&quot;#FF0000&quot;,&quot;#CCFF00&quot;,&quot;#00FF66&quot;,&quot;#0066FF&quot;,&quot;#CC00FF&quot;))<br>
 <img src="https://guohong91.github.io/post-images/1618557871213.png" alt="" loading="lazy"></p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[map+pie+point]]></title>
-        <id>https://guohong91.github.io/post/mappiepoint/</id>
-        <link href="https://guohong91.github.io/post/mappiepoint/">
-        </link>
-        <updated>2021-04-16T02:42:17.000Z</updated>
-        <content type="html"><![CDATA[<p>library(ggplot2)<br>
-library(scatterpie)<br>
-d&lt;-read.table(&quot;clipboard&quot;,header=T)</p>
-<p>#a white map<br>
-world &lt;- map_data('world')<br>
-p &lt;- ggplot(world, aes(long, lat)) +<br>
-geom_map(map=world, aes(map_id=region), fill=&quot;gray75&quot;, color=&quot;grey75&quot;) +<br>
-coord_quickmap()</p>
-<p>#white map with pie chart<br>
-p + geom_scatterpie(aes(x=long, y=lat, group=region, r=radius),<br>
-data=d, cols=c(&quot;IS&quot;,&quot;IG&quot;), color=NA, alpha=.8) +<br>
-geom_scatterpie_legend(d$radius, x=-160, y=-55,n=3)<br>
-<img src="https://guohong91.github.io/post-images/1618541253229.png" alt="" loading="lazy"></p>
-<p>#white map with point<br>
-p + geom_point(aes(x=long, y=lat, color=region,size=radius),data=d)<br>
-<img src="https://guohong91.github.io/post-images/1618541272408.png" alt="" loading="lazy"></p>
 ]]></content>
     </entry>
 </feed>
