@@ -81,7 +81,6 @@ top&lt;-max(Markdata</annotation></semantics></math></span><span class="katex-ht
 stat_boxplot(geom = &quot;errorbar&quot;)+<br>
 geom_boxplot()+<br>
 labs(title=&quot;&quot;,x=&quot;&quot;, y = &quot;HGW (g)&quot;)+<br>
-scale_fill_brewer(palette=&quot;Dark2&quot;) +<br>
 theme_minimal()+<br>
 theme(legend.position=&quot;none&quot;)+<br>
 geom_text(data = Markdata, aes(x= factor(rowname), y= top+1.3, label = marker), inherit.aes = FALSE)+<br>
